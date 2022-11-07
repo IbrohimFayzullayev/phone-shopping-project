@@ -1,0 +1,63 @@
+.header {
+  height: 70px;
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 40px;
+  box-sizing: border-box;
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    .notification {
+      position: relative;
+      .circle {
+        position: absolute;
+        color: white;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #00c48c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        top: -8px;
+        left: 8px;
+      }
+    }
+
+    .cabinet {
+      display: flex;
+      height: 70px;
+      width: 292px;
+      align-items: center;
+      background-color: #3d639d;
+      justify-content: center;
+      gap: 20px;
+      border-radius: 0px 0px 0px 30px;
+
+      &__name {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 19px;
+        color: white;
+      }
+
+      &__profile {
+        cursor: pointer;
+        background-color: white;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

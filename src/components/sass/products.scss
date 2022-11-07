@@ -1,0 +1,192 @@
+.products {
+  padding: 20px;
+  padding-right: 52px;
+  box-sizing: border-box;
+  width: 1177px;
+
+  .mainnn {
+    width: 100%;
+    background-color: #f3f5f8;
+    height: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 6px;
+    .top__menu {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+
+      p {
+        color: #00c48c;
+      }
+    }
+    .title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 26px;
+      color: #3d639d;
+      margin-top: 35px;
+    }
+    .search__bar {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      background-color: white;
+      height: 50px;
+      border-radius: 30px;
+      margin: 22px auto;
+      input,
+      button {
+        border: none;
+        outline: none;
+      }
+      button {
+        background-color: #00c48c;
+        color: white;
+        width: 100px;
+        border-radius: 0 30px 30px 0;
+        cursor: pointer;
+        font-size: 20px;
+      }
+      input {
+        width: 70%;
+        padding-left: 30px;
+        border-radius: 30px;
+        font-size: 16px;
+      }
+    }
+    .sub__title {
+      font-weight: 600;
+      font-size: 15px;
+      color: #262728;
+    }
+    .products__menu {
+      display: grid;
+      margin-top: 25px;
+      grid-template-columns: repeat(5, 1fr);
+      row-gap: 25px;
+    }
+    .product {
+      width: 192px;
+      height: 265px;
+      background-color: white;
+      padding: 13px;
+      border-radius: 8px;
+
+      &__img {
+        cursor: pointer;
+        background-color: #f7f7f7;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 168px;
+        width: 168px;
+        margin: 0 auto;
+        position: relative;
+        .bundle__box,
+        .sale__box,
+        .icon__trade {
+          position: absolute;
+        }
+        .bundle__box,
+        .icon__trade {
+          top: 10px;
+          left: 9px;
+        }
+        .bundle__box {
+          background-color: #a2aedb;
+        }
+        .icon__trade {
+          background-color: #f39dbd;
+        }
+        .sale__box {
+          top: 44px;
+          left: 9px;
+          background-color: #ffbd95;
+        }
+        .sale__box,
+        .bundle__box,
+        .icon__trade {
+          width: 36px;
+          height: 28px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 6px;
+        }
+      }
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 6px;
+        .product__name {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 17px;
+          letter-spacing: -0.3px;
+          color: #262728;
+        }
+
+        .product__price {
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 18px;
+          letter-spacing: -0.3px;
+          color: #262728;
+        }
+        .viki__box {
+          display: flex;
+          gap: 6px;
+          align-items: center;
+
+          .product__monthprice {
+            background: #ff647c;
+            border-radius: 2px;
+            font-weight: 600;
+            font-size: 13px;
+            color: white;
+            padding: 4px;
+          }
+          .product__month {
+            color: #bbc2d0;
+          }
+        }
+      }
+    }
+
+    .pagination {
+      display: flex;
+      width: 1041px;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+      font-size: 30px;
+      .numbers {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .num_active {
+          background-color: #00c48c;
+          color: white;
+        }
+        .num_active,
+        .num {
+          width: 36px;
+          height: 36px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
