@@ -33,26 +33,6 @@ const Menu = () => {
   const [active, setActive] = useState(5);
   return (
     <div className="menu">
-      {/* <div className="menu__item">
-        <i className="bi bi-house"></i>
-        <p>Главная</p>
-      </div>
-      <div className="menu__item">
-        <i className="bi bi-menu-up"></i>
-        <p>Заказы</p>
-      </div>
-      <div className="menu__item ">
-        <i className="bi bi-bag-dash"></i>
-        <p>Товары</p>
-      </div>
-      <div className="menu__item">
-        <i className="bi bi-star"></i>
-        <p>Отзывы</p>
-      </div>
-      <div className="menu__item click__item">
-        <i className="bi bi-cart-dash"></i>
-        <p>Оформить заказ</p>
-      </div> */}
       {menujson.map((menu) => {
         return (
           <div
